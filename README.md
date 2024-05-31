@@ -12,7 +12,7 @@ This is inspired/forked from Jahidul Hamid and intika's update ([v.4.03](https:/
 
 ## nshc - IN PROGRESS
 
-```nshc```, on the other hand, is an llvm frontend for the Bash scripting language, targeting Bash version 4.0, which implemented associative arrays. 
+```nshc```, on the other hand, is an llvm frontend for the Bash scripting language, targeting Bash version 4.0, which implemented associative arrays. Its main purpose to facilitate the full compilation of Bash shell scripts to native binary executables. In honor of ```shc```, binary expiration will be a configurable option.
 
 The Bash shell is written in C. ```nsch``` follows suit and implements the Bash scripting language in C, inlining Bash "builtins" as needed.  Non-builtin commands are invoked using forked exec() functions.  This C code will be transpiled into llvm IR (intermediate representation), allowing Bash shell scripts to be compiled into native binary executables.  
 
@@ -22,7 +22,7 @@ Such binaries should be dynamic and stripped to reduce their size as much as pos
 
 Once the Bash scripting language is fully implemented, ```nshc``` will begin extending support to other shell scripting languages (not including PowerShell).
 
-Bash is, of course, a superset of the ```sh``` command syntax, so ```sh``` support should be easily implemented.  
+Bash is, of course, a superset of the ```sh``` command syntax, so ```sh``` support should be easily implemented. Support for ```zsh``` and other shell script dialects will be added in turn.  Dialect selection will be determined by the source script's shebang.
 
 
 ## Resources
