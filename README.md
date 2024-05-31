@@ -18,6 +18,12 @@ The Bash shell is written in C. nsch follows suit and implements the Bash script
 
 Such binaries should be dynamic and stripped to reduce their size as much as possible, but that's a backend compiler decision and isn't determined by nshc.
 
+## Roadmap
+
+Once the Bash scripting language is fully implemented, nshc will begin extending support to other shell scripting languages (not including PowerShell).
+
+Bash is, of course, a superset of the ```sh``` command syntax, so ```sh``` support should be easily implemented.  
+
 
 ## Resources
 [Scripting reference](https://decal.ocf.berkeley.edu/labs/scripting/)
